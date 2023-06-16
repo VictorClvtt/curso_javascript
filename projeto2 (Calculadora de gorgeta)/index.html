@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projeto 2</title>
+</head>
+<body>
+    
+    <div class="calculator_body" oninput="update()">
+
+        <h1><i>Tip Calculator</i></h1>
+        
+        <div class="inner_body">
+            
+            <div class="bill">
+                <h2>Bill:</h2>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <span class="input-group-text">0.00</span>
+                    <input type="text" id="yourBill" class="form-control" placeholder="Bill value" aria-label="Dollar amount (with dot and two decimal places)">
+                </div>
+            </div>
+
+            <div class="percentageDiv">
+                <h3>Select the tip percentage:</h3>
+                <span id="percentageValue">0%</span>
+            </div>
+
+            <input type="range" value="0" id="percentage1" class="range">
+            
+            <div class="percentageDiv">
+                <h3>Bill:</h3>
+                <span id="billNoTip">0.00$</span>
+            </div>
+            <div class="percentageDiv">
+                <h3>Tip:</h3>
+                <span id="tipValue" style="color: red;">+0.00$</span>
+            </div>
+
+            <footer></footer>
+
+            <div class="percentageDiv">
+                <h2>Total:</h2>
+                <span id="total" style="color: rgb(90, 90, 233);">0.00$</span>
+            </div>
+        </div>
+        <div class="inner_body">
+
+            <div class="percentageDiv">
+                <h2>Split:</h2>
+                <span id="peopleValue">1 person</span>
+            </div>
+
+            <input type="range" min="1" max="10" value="1" id="people1" class="range">
+
+            <div class="percentageDiv">
+                <h3>Bill for each:</h3>
+                <span id="billForEach">0.00$</span>
+            </div>
+            <div class="percentageDiv">
+                <h3>Tip for each:</h3>
+                <span id="tipForEach" style="color: red;">+0.00$</span>
+            </div>
+
+            <footer></footer>
+
+            <div class="percentageDiv">
+                <h2>Total for each:</h2>
+                <span id="totalForEach" style="color: rgb(90, 90, 233);">0.00$</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

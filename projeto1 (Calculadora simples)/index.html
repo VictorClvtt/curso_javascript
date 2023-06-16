@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projeto 1</title>
+</head>
+<body>
+
+    <div class="calculadora">
+        
+        <div id="rodape">
+            <button onclick="refresh()" id="reiniciar"><img src="assets/refresh_FILL0_wght400_GRAD0_opsz48.png" alt="Reiniciar" title="Limpar os valores"></button>
+            <h1>Calculadora</h1>
+        </div>
+
+        <input id="num1" class="numeros" type="text">
+        <input id="num2" class="numeros" type="text">
+
+        <div class="operacoes">
+        
+            <div><input type="radio" value="+" name="operation"><p>+</p></div>
+            <div><input type="radio" value="-" name="operation"><p>-</p></div>
+            <div><input type="radio" value="*" name="operation"><p>*</p></div>
+            <div><input type="radio" value="/" name="operation"><p>/</p></div>
+        
+        </div>
+        
+        <input onclick="capturarNumeros()" class="calcular" type="submit" value="Calcular">
+
+        <div id="result1"><h2 id="resultado"></h2></div>
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

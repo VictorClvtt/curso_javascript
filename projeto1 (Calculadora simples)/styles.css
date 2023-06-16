@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(108, 13, 13);
+    display: flex;
+    justify-content: center;
+}
+
+.calculadora{
+    background: rgb(95, 19, 19);
+    height: fit-content;
+    width: 40%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    border-top: 5px rgb(80, 10, 10) solid;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+}
+
+#rodape{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#rodape #reiniciar{
+    height: 30px;
+    width: 30px;
+
+}
+
+#rodape #reiniciar img{
+    height: 27px;
+    width: 27px;
+}
+
+#rodape h1{
+    color: antiquewhite;
+    align-self: center;
+    margin: 0 32.8% 0 0;
+}
+
+.calculadora .numeros{
+    margin-bottom: 7px;
+    border: 0;
+}
+
+.calculadora input{
+    width: 50%;
+    zoom: 175%;
+    padding: 5px 5px;
+}
+
+.calculadora .calcular{
+    height: fit-content;
+    width: fit-content;
+    zoom: 130%;
+}
+
+.operacoes{
+    zoom: 110%;
+    display: flex;
+    gap: 3px;
+    margin-top: 18px;
+    margin-bottom: 25px;
+    border: 2px solid rgb(140, 39, 39);
+    background-color: rgb(140, 39, 39);
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.355);
+}
+
+.operacoes div{
+    background: rgb(95, 19, 19);
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3px;
+}
+
+.operacoes div p{
+    margin: 1px 0 0 0;
+    width: 10px;
+    color: antiquewhite;
+}
+
+.calculadora .calcular{
+    zoom: 125%;
+    padding: 2px 5px;
+    margin: 0 0 17px 0;
+}
+
+#result1{
+    background: rgb(54, 38, 38);
+    color: rgb(0, 255, 47);
+    border: 3px solid black;
+    font-size: 190%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 50px;
+    width: 65%;
+}
+
+#result2{
+    background: rgb(0, 0, 0);
+    color: rgb(0, 255, 47);
+    border: 3px solid grey;
+    font-size: 190%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 50px;
+    width: 65%;
+}
