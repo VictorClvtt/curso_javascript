@@ -7,7 +7,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    vertical-align: middle;
     background-size: cover;
     background: linear-gradient(10deg, rgb(25, 146, 148) 10%, rgb(29, 223, 87) 100%) no-repeat center fixed;
 }
@@ -18,14 +17,15 @@ h3{
 
 .calculator_body{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 8px 4% 5px;
-    width: 50%;
-    height: 100%;
-    margin: 1% auto;
-    
+    gap: 20px;
+    padding: 40px;
+    width: 650px;
+    height: 95%;
+    margin: 10px 25px;
+    overflow: hidden;
     background: linear-gradient(75deg, rgb(235, 235, 235) 0%, rgb(250, 250, 250) 60%);
     border-radius: 20px;
     box-shadow: 10px 10px 2px 0px rgba(0, 0, 0, 0.423);
@@ -37,9 +37,9 @@ h3{
     flex-direction: column;
     justify-content: center;
     border: 3px solid rgba(128, 128, 128, 0.633);
-    padding: 3% 3% 5px;
-    gap: 10px;
-    margin-bottom: 25px;
+    padding: 15px 3% 5px;
+    gap: 3px;
+    
     border-radius: 10px;
     box-shadow: 8px 8px 2px 0px rgba(0, 0, 0, 0.423);
 }
